@@ -61,7 +61,7 @@ resource "aws_instance" "PUB-SRV-2" {
 resource "aws_instance" "PRIV-SRV-1" {
     ami                         = "ami-09e67e426f25ce0d7"
     instance_type               = "t2.micro"
-    associate_public_ip_address = true
+    associate_public_ip_address = false
     subnet_id                   = aws_subnet.subnet-priv-1.id
     key_name                    = "AWS"
     private_ip                  = "172.30.10.5"
