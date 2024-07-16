@@ -32,7 +32,7 @@ resource "aws_subnet" "subnet-priv-1" {
     availability_zone               = "us-east-1c"
     cidr_block                      = "172.30.10.0/24"
     tags                            = {
-        "Name" = "Subnet-Priv-2-172.30.10.0"
+        "Name" = "Subnet-Priv-1-172.30.10.0"
     }
     vpc_id                          = aws_vpc.test_vpc.id
 }
